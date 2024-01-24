@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    background-image:url("./ilustração.jpeg");
+    background-position: center;
+    background-size: cover;
+    justify-content:center;
+    align-items: center;
+}
+.container {
+    width: 40%;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    padding: 0 10px;
+    box-shadow: rgba(18, 1, 1, 0.373) 0 0 15px -2px;
+    border-radius: 15px;
+}
+h1 {
+    margin: 40px 0;
+    width: 100%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: rgb(85, 85, 224) 2px 2px 0px ;
+}
+.input {
+    width: 90%;
+}
+
+label {
+    width: 100%;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px 0 2px 0 ;    
+    text-align: center;
+}
+input {
+    width: 100%;
+    height: 20px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: blue 2px 2px 0px;
+}
+#calculate {
+    width: 75px;
+    height: 5vh;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: #00000000 1px solid;
+    transition: all 2s;
+    box-shadow: blue 1px 2px 0.5px;
+}
+#calculate:hover {
+    transform: scale(0.95);
+    background-color: #ffffff00;
+    transition: 0.7s;
+    box-shadow: black -1px 2.5px 3px -1px;
+}
+#result {
+    padding:5px;
+    background-color: #6f6b6b;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 15px;
+    transition: 1s;
+}
+@media(max-width:768px) {
+    .container {
+        width: 80%;
+        background-position: 90deg;
+    }
+}
